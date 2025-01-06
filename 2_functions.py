@@ -3,7 +3,8 @@
 
 # You should only define the function, you should not call it later.
 
-
+def greet():
+    print("Hello World!")
 
 
 
