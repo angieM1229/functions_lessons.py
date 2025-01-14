@@ -1,3 +1,52 @@
+# *args = allows you to pass multiple non-key arguments
+# **kwargs = allows you to pass multiple keyword-arguments
+# * unpacking operator
+# 1. postional 2. default 3. keyword 4. ARBITRARY
+
+# def add(*args):
+#     total=0
+#     for arg in args:
+#         total += arg
+#     return total
+
+# print(add(1,2,3,4,5,6,7,8,9))
+
+# def display_name(*args):
+#     for arg in args:
+#         print(arg, end="/")
+
+# display_name("Dr.","Spongebob","Harold", "Squarepants", "III")
+
+# def print_address(**kwargs):
+#     for key in kwargs.keys():
+#         print(f"{key}: {value})
+
+# print_address(
+
+def shiiping_label(*args, **kwargs):
+    for arg in args:
+        print(arg, end="")
+    print()
+    for value in kwargs.values( ):
+        print(value, end=" ")
+
+shiiping_label("Dr.","Spongebob","Harold", "Squarepants", "III",
+               street="6335 S Lawler",
+               city= "Chicago",
+               state="Ilinois",
+               zip="60638")
+
+
+
+
+
+
+
+
+
+
+
+
 # Indefinite Arguments (*args) Practice #1
 # Create a function called sum_squares that takes any number of numeric arguments, and returns the sum of their values squared.
 
@@ -13,3 +62,4 @@
 # The function should return the following message:
 
 # "{name}, the sum of your numbers is {sum_numbers}"
+
